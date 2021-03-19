@@ -11,13 +11,13 @@ var prezzoTotaleUno = kmUtenteUno * prezzoKm;
 if(etaUtenteUno > 65) {
     var percentUno = prezzoTotaleUno * 40 / 100;
     var prezzoScontatoUno = prezzoTotaleUno - percentUno;
-    document.getElementById('biglietto-1').innerHTML = prezzoScontatoUno.toFixed( 2 );
+    document.getElementById('biglietto-1').innerHTML = 'Il prezzo da pagare della prima persopne è: ' + prezzoScontatoUno.toFixed( 2 );
 } else if(etaUtenteUno < 18) {
     var percentUno = prezzoTotaleUno * 20 / 100;
     var prezzoScontatoUno = prezzoTotaleUno - percentUno;
-    document.getElementById('biglietto-1').innerHTML = prezzoScontatoUno.toFixed( 2 );
+    document.getElementById('biglietto-1').innerHTML = 'Il prezzo da pagare della prima persopne è: ' + prezzoScontatoUno.toFixed( 2 ) + '€';
 } else {
-    document.getElementById('biglietto-1').innerHTML = prezzoTotaleUno.toFixed( 2 );
+    document.getElementById('biglietto-1').innerHTML = 'Il prezzo da pagare della prima persopne è: ' + prezzoTotaleUno.toFixed( 2 ) + '€';
 }
 
 
@@ -31,11 +31,11 @@ var prezzoTotaleDue = kmUtenteDue * prezzoKm;
 if(etaUtenteDue > 65) {
     var percentDue = prezzoTotaleDue * 40 / 100;
     var prezzoScontatoDue = prezzoTotaleDue - percentDue;
-    document.getElementById('biglietto-2').innerHTML = prezzoScontatoDue.toFixed( 2 );
+    document.getElementById('biglietto-2').innerHTML = 'Il prezzo da pagare della seconda persopne è: ' + prezzoScontatoDue.toFixed( 2 ) + '€';
 } else if(etaUtenteDue < 18) {
     var percentDue = prezzoTotaleDue * 20 / 100;
     var prezzoScontatoDue = prezzoTotaleDue - percentDue;
-    document.getElementById('biglietto-2').innerHTML = prezzoScontatoDue.toFixed( 2 );
+    document.getElementById('biglietto-2').innerHTML = 'Il prezzo da pagare della seconda persopne è: ' + prezzoScontatoDue.toFixed( 2 ) + '€';
 } else {
-    document.getElementById('biglietto-2').innerHTML = prezzoTotaleDue.toFixed( 2 );
+    document.getElementById('biglietto-2').innerHTML = 'Il prezzo da pagare della seconda persopne è: ' + prezzoTotaleDue.toFixed( 2 ) + '€';
 }
